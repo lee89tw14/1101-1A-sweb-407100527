@@ -23,6 +23,3 @@ git push
 # css
 
 rem = body 中的 fontsize 為基準來乘除
-# 1101-1S-sweb-407100527
-# 1101-1S-sweb-407100527
-# 1101-1S-sweb-407100527
