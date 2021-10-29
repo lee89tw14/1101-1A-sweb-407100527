@@ -9,9 +9,10 @@ P1. (local) 請將本週課堂實作老師所定的目錄作出來，如下題�
 P2. (Github) 請將本週課堂練習放入 Github private repo，並將之分享給老師(htchung) ，請繳交
 
 - Github private repo URL，讓老師跟助教可以點選進入
+  https://github.com/lee89tw14/1101-1A-sweb-407100527
 - Github private repo 之 Chrome 截圖，表示有建立成功
-- 有分享給老師之畫面截圖 (在 Setting --> Manage Access 中可以找到)
   ![](https://i.imgur.com/bqS3I8B.png)
+- 有分享給老師之畫面截圖 (在 Setting --> Manage Access 中可以找到)
   ![](https://i.imgur.com/6lTtTgT.png)
 
 ---
