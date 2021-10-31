@@ -1,0 +1,69 @@
+* {
+  font-size: 20pt;
+  font-family: Arial, sans-serif;
+}
+body {
+  width: 80%;
+  margin: 20px;
+  padding: 20px;
+}
+.tg {
+  border-collapse: collapse;
+  border: none;
+  border-spacing: 0;
+}
+.tg td {
+  border-color: black;
+  border-width: 1px;
+  border-left: solid 1px;
+  border-right: solid 1px;
+  border-bottom: dashed 1px;
+}
+.tg th {
+  border-color: black;
+  border-width: 1px;
+  border-bottom: dashed;
+  border: solid 1px;
+  font-weight: normal;
+  overflow: hidden;
+  padding: 5px 20px 5px 10px;
+  word-break: break-all;
+}
+.tg .tg-furigana {
+  border-color: #000000;
+  font-size: 0.2rem;
+  text-align: left;
+  vertical-align: top;
+  word-break: break-all;
+}
+.tg .tg-name {
+  border-color: #000000;
+  padding: 5px 10px 5px 10px;
+  word-break: break-all;
+  text-align: center;
+}
+.tg .tg-name-s {
+  font-size: 0.4rem;
+  text-align: left;
+  vertical-align: text-top;
+}
+
+.tg .tg-sex {
+  text-align: center;
+  vertical-align: center;
+  word-break: break-all;
+}
+.tg .sex {
+  font-size: 0.8rem;
+  text-align: center;
+  vertical-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.tg .birth {
+  font-size: 0.8rem;
+  text-align: center;
+  vertical-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}

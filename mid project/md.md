@@ -6,3 +6,11 @@
   CSS、jsQuery 等文件都有 CDN 可以直接外連，這是比較方便的。
 
   **選單頁面為 index 頁面**
+
+---
+
+- 合併表格
+- 強制置中
+  ![](https://i.imgur.com/YuUwHtG.png)
+  使用 colspan 來合併表格
+  使用 center 強制置中頁面
