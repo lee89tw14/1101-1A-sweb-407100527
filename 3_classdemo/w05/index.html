@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Microsoft Clone</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- NAV -->
+      <div class="main-nav">
+        <img src="./img/logo.png" alt="logo" class="logo" />
+        <ul class="main-menu">
+          <li>
+            <a href="#">Office</a>
+          </li>
+          <li>
+            <a href="#">Windows</a>
+          </li>
+          <li>
+            <a href="#">Surface</a>
+          </li>
+          <li>
+            <a href="#">XBox</a>
+          </li>
+          <li>
+            <a href="#">Deals</a>
+          </li>
+          <li>
+            <a href="#">Support</a>
+          </li>
+        </ul>
+        <ul class="right-menu">
+          <li>
+            <a href="#"><i class="fas fa-search"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+          </li>
+        </ul>
+      </div>
+      <!-- SHOWCASE -->
+      <div class="slideshow">
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <header class="showcase">
+              <h2>Surface Deals</h2>
+              <p>Select Surfaces are on sale now - save while supplies last</p>
+              <a href="#">Shop Now</a>
+            </header>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="xbox">
+              <div class="content">
+                <h2>Xbox Game Pass Ultimate</h2>
+                <p>
+                  Xbox Game Pass Ultimate Xbox Live Gold and over 100
+                  high-quality console and PC games. Play together with friends.
+                </p>
+                <a href="#" class="btn">
+                  Join Now <i class="fas fa-chevron-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="./img/img_lights_wide.jpg" style="width: 100%" />
+            <div class="text">Caption Three</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="./img/img_mountains_wide.jpg" style="width: 100%" />
+            <div class="text">Caption Three</div>
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br />
+
+        <!-- The dots/circles -->
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+      </div>
+
+      <!-- HOME CARD　1 -->
+      <section class="home-card"></section>
+    </div>
+    <script src="./slideshow.js"></script>
+  </body>
+</html>
