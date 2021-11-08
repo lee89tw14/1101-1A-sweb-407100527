@@ -1,0 +1,180 @@
+HTML
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hero</title>
+
+    <link rel="stylesheet" href="./hero.css" />
+  </head>
+  <body>
+    <div class="slideshow">
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 2</div>
+          <img
+            src="https://cdn.discordapp.com/attachments/861248486555779102/904976189884596274/line_303264301482801.jpg"
+            style="width: 100%"
+          />
+          <div class="text">於秋田教養大學歡迎式上與老師模擬會話</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 2</div>
+          <img
+            src="https://cdn.discordapp.com/attachments/861248486555779102/904976155143184394/line_303706803654142.jpg"
+            style="width: 100%"
+          />
+          <div class="text">於秋田教養大學進行課前評量</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br />
+
+      <!-- The dots/circles -->
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+      </div>
+    </div>
+    <script src="./slideshow.js"></script>
+  </body>
+</html>
+```
+
+SCSS
+
+```scss
+* {
+  box-sizing: border-box;
+}
+body {
+  background-image: url(http://d20aeo683mqd6t.cloudfront.net/zh-hant/articles/title_images/000/040/984/medium/pixta_40007407_M.jpg?2021);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+.slideshow {
+  border: 10px solid #d5d6b4;
+  margin: 20px auto;
+  padding: 20px;
+  width: 50%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  background-color: rgba(247, 199, 239, 0.877);
+
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+      .text {
+        color: black;
+        background-color: #ffffff;
+      }
+    }
+    /* Next & previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+    }
+    .prev:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+      .active {
+        background-color: #717171;
+      }
+    }
+  }
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    &:hover {
+      background-color: #717171;
+    }
+  }
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    /* Fading animation */
+    @-webkit-keyframes fade {
+      from {
+        opacity: 0.4;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: 0.4;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  }
+}
+```
