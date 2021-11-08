@@ -14,21 +14,39 @@
       <div class="slideshow-container">
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
-          <div class="numbertext">1 / 2</div>
+          <div class="numbertext">1 / 4</div>
           <img
             src="https://cdn.discordapp.com/attachments/861248486555779102/904976189884596274/line_303264301482801.jpg"
             style="width: 100%"
           />
-          <div class="text">於秋田教養大學歡迎式上與老師模擬會話</div>
+          <div class="text">Caption Text</div>
         </div>
 
         <div class="mySlides fade">
-          <div class="numbertext">2 / 2</div>
+          <div class="numbertext">2 / 4</div>
           <img
             src="https://cdn.discordapp.com/attachments/861248486555779102/904976155143184394/line_303706803654142.jpg"
             style="width: 100%"
           />
-          <div class="text">於秋田教養大學進行課前評量</div>
+          <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img
+            src="https://cdn.discordapp.com/attachments/861248486555779102/904976155420000266/line_303686041817067.jpg"
+            style="width: 100%"
+          />
+          <div class="text">Caption Three</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 4</div>
+          <img
+            src="https://cdn.discordapp.com/attachments/861248486555779102/904976154807656468/line_303743043236056.jpg"
+            style="width: 100%"
+          />
+          <div class="text">Caption Three</div>
         </div>
 
         <!-- Next and previous buttons -->
@@ -41,6 +59,8 @@
       <div style="text-align: center">
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
       </div>
     </div>
     <script src="./slideshow.js"></script>
