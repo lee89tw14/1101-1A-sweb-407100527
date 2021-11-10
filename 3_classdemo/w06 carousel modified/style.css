@@ -208,7 +208,6 @@ ul {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .slideshow .slideshow-container .next {
@@ -216,11 +215,8 @@ ul {
   border-radius: 3px 0 0 3px;
 }
 
+.slideshow .slideshow-container .prev:hover,
 .slideshow .slideshow-container .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.slideshow .slideshow-container .prev:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -289,4 +285,3 @@ ul {
 }
 
 /* HOME CARD */
-/*# sourceMappingURL=style.css.map */

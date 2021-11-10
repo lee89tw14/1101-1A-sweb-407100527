@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  height: 100vh;
+  margin: auto;
+}
+
+.heading {
+  width: 100%;
+  height: 50px;
+  background-color: aqua;
+  border: 2px solid #55dd;
+}
+.heading ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading ul li {
+  padding: 10px;
+}
+
+.heading ul li a {
+  text-decoration: none;
+  padding: 5px;
+}
+
+.heading ul li a:hover {
+  color: azure;
+  background: darkolivegreen;
+}
+
+.show-classdemo {
+  width: 100%;
+  height: 100vh;
+}

@@ -6,17 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index of Classdemo</title>
   </head>
+  <link rel="stylesheet" href="./style.css">
   <body>
-    <h3>Index of Classdemo</h3>
-    <ul>
-      <li><a href="./w01/intro.html">Intro</a></li>
-      <li><a href="./w01/pokemon.html">pokemon</a></li>
-      <li><a href="./w04/blog.html">blog</a></li>
-      <li><a href="./w04/imageGallery.html">imageGallery</a></li>
-      <li><a href="./w05/index.html">MS clone</a></li>
-      <li>
-        <a href="./w06 carousel modified/index.html">MS clone with carousel</a>
-      </li>
-    </ul>
+    <div class="container">
+      <div class="heading">
+        <ul>
+          <li onclick="change(1)"><a href="#">Intro</a></li>
+          <li onclick="change(2)"><a href="#">pokemon</a></li>
+          <li onclick="change(3)"><a href="#">blog</a></li>
+          <li onclick="change(4)"><a href="#">imageGallery</a></li>
+          <li onclick="change(5)"><a href="#">MS clone</a></li>
+          <li onclick="change(6)">
+            <a href="#">MS clone with carousel</a>
+          </li>
+        </ul>
+      </div>
+      <section class="show-classdemo"></section>
+    </div>
+    <script src="./script.js"></script>
   </body>
 </html>
+
+
