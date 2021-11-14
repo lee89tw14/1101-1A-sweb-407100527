@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>midproject</title>
+  </head>
+  <link rel="stylesheet" href="./midproject.css" />
+
+  <body>
+    <nav class="heading">
+      <div class="main-nav">
+        <div class="heading">
+          <ul>
+            <li><a href="#hero">HERO</a></li>
+            <li><a href="#resume">RESUME</a></li>
+            <li><a href="#photo">PHOTO</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- HERO -->
+    <div class="slideshow" id="hero">
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 2</div>
+          <img
+            src="https://cdn.discordapp.com/attachments/861248486555779102/904976189884596274/line_303264301482801.jpg"
+            style="width: 100%"
+          />
+          <div class="text">於秋田教養大學歡迎式上與老師模擬會話</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 2</div>
+          <img
+            src="https://cdn.discordapp.com/attachments/861248486555779102/904976155143184394/line_303706803654142.jpg"
+            style="width: 100%"
+          />
+          <div class="text">於秋田教養大學進行課前評量</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br />
+
+      <!-- The dots/circles -->
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+      </div>
+    </div>
+    <script src="./slideshow.js"></script>
+    <!-- 履歷表 -->
+    <table id="resume">
+      <table
+        border="2px"
+        style="width: 80%; margin: 80px auto; text-align: center"
+        id="resume"
+      >
+        <tr>
+          <th style="border-right: none; width: 15%">姓名</th>
+          <td style="border-left: none" colspan="2">李亮誼</td>
+          <td style="width: 20%">
+            <img
+              style="height: 150px"
+              src="https://rukkafran.xyz/usr/uploads/2021/11/822595306.png"
+              alt=""
+            />
+          </td>
+        </tr>
+        <tr style="height: 50px">
+          <th>生年月日</th>
+          <td>2000年08月14日生 滿21歲</td>
+          <th>性別</th>
+          <td>男</td>
+        </tr>
+        <tr>
+          <th rowspan="1">email</th>
+          <td>407100527@gms.tku.edu.tw</td>
+          <th>電話</th>
+          <td>88698826xxxx</td>
+        </tr>
+      </table>
+      <table
+        border="2px"
+        style="width: 80%; margin: 80px auto; text-align: center"
+      >
+        <tr style="height: 50px">
+          <th style="width: 10%">年</th>
+          <th style="width: 10%">月</th>
+          <th colspan="3">學・經歷</th>
+        </tr>
+        <th></th>
+        <th></th>
+        <th colspan="3">學歷</th>
+        <tr>
+          <td>2015</td>
+          <td>9</td>
+          <td colspan="3">國立斗六高級中學　　入學</td>
+        </tr>
+        <tr>
+          <td>2018</td>
+          <td>6</td>
+          <td colspan="3">國立斗六高級中學　　畢業</td>
+        </tr>
+        <tr>
+          <td>2018</td>
+          <td>9</td>
+          <td colspan="3">私立淡江大學日本語文學科　　入學</td>
+        </tr>
+        <tr>
+          <td>2022</td>
+          <td>6</td>
+          <td colspan="3">
+            私立淡江大學學校財團法人淡江大學日本語文學科　　預計畢業
+          </td>
+        </tr>
+        <th></th>
+        <th></th>
+        <th colspan="3">職歷</th>
+        <tr>
+          <td>2019</td>
+          <td>9</td>
+          <td colspan="3">淡江大學資訊處電腦維修服務隊 入職至今</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td colspan="3" style="text-align: right">以上</td>
+        </tr>
+      </table>
+      <table
+        border="2px"
+        style="width: 80%; margin: 80px auto; text-align: center"
+      >
+        <tr>
+          <th style="width: 10%">年</th>
+          <th style="width: 10%">月</th>
+          <th colspan="3">免許・資格</th>
+        </tr>
+        <tr>
+          <td>2018</td>
+          <td>8</td>
+          <td>普通重型機車駕照　　取得</td>
+        </tr>
+        <tr>
+          <td>2019</td>
+          <td>6</td>
+          <td>華語・英語導遊領隊資格考試　　合格</td>
+        </tr>
+        <tr>
+          <td>2019</td>
+          <td>8</td>
+          <td>普通自小客車駕照(手排)　　取得</td>
+        </tr>
+        <tr>
+          <td>2021</td>
+          <td>2</td>
+          <td>日本語能力試驗N2　　</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td colspan="3" style="text-align: right">以上</td>
+        </tr>
+      </table>
+    </table>
+    <!-- photo -->
+    <div class="photo" id="photo">
+      <div class="line3">
+        <img
+          src="https://cdn.discordapp.com/attachments/861248486555779102/904976154300121128/line_303760595402716.jpg"
+          alt=""
+        />
+        <img
+          src="https://cdn.discordapp.com/attachments/861248486555779102/904976154807656468/line_303743043236056.jpg"
+          alt=""
+        />
+        <img
+          src="https://cdn.discordapp.com/attachments/861248486555779102/904976155143184394/line_303706803654142.jpg"
+          alt=""
+        />
+        <img
+          src="https://cdn.discordapp.com/attachments/861248486555779102/904976155420000266/line_303686041817067.jpg"
+          alt=""
+        />
+        <img
+          src="https://cdn.discordapp.com/attachments/861248486555779102/904976155688448020/line_303673431103895.jpg"
+          alt=""
+        />
+        <img
+          src="https://cdn.discordapp.com/attachments/861248486555779102/904976189884596274/line_303264301482801.jpg"
+          alt=""
+        />
+      </div>
+      <div class="div2">
+        <h1>圖片敘述</h1>
+        <p id="FC">
+          2020年1月，拍攝於日本秋田教養大學，當時隨日文系與教養大學共同舉辦的日文寒假研修program前往。以上六張圖片為當時上課紀錄以及歡迎式。
+        </p>
+      </div>
+      <div class="line3">
+        <img
+          src="https://cdn.discordapp.com/attachments/861248486555779102/909307926487892008/line_362791476586341.jpg"
+          alt=""
+        />
+        <img
+          src="https://cdn.discordapp.com/attachments/861248486555779102/904976189645545472/line_303312304635543.jpg"
+          alt=""
+        />
+        <img
+          src="https://cdn.discordapp.com/attachments/861248486555779102/904976189360316426/line_303419067717742.jpg"
+          alt=""
+        />
+        <img
+          src="https://cdn.discordapp.com/attachments/861248486555779102/909307443308273674/line_362639859130774.jpg"
+          alt=""
+        />
+        <img
+          src="https://cdn.discordapp.com/attachments/861248486555779102/909307443937443840/line_362675769795292.jpg"
+          alt=""
+        />
+        <img
+          src="https://cdn.discordapp.com/attachments/861248486555779102/909307443622854696/line_362656095748424.jpg"
+          alt=""
+        />
+      </div>
+      <div class="div2">
+        <h1>圖片敘述</h1>
+        <p id="FC">
+          2020年1月，拍攝於日本秋田/男鹿/入道崎，當時隨日文系與教養大學共同舉辦的日文寒假研修program前往。以上六張圖片為紀錄當時假日時出遊的狀況。
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
