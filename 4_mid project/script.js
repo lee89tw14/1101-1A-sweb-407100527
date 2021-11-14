@@ -29,7 +29,20 @@ function change(index){
         case 9:
             p.innerHTML = '<iframe width=100% height=100% src="./classdemo/w06 carousel modified/index.html"></iframe>'
             break;
+        case 10:
+            p.innerHTML = '<iframe width=100% height=100% src="classdemo/w04/imageGallery.html"></iframe>'
+            break;
+        case 11:
+            p.innerHTML = '<iframe width=100% height=100% src="https://rukkafran.xyz"></iframe>'
+            break;
+        case 12:
+            p.innerHTML = '<iframe width=100% height=100% src="./classdemo/w05/index.html"></iframe>'
+            break;
+        case 13:
+            p.innerHTML = '<iframe width=100% height=100% src="./classdemo/w06 carousel modified/index.html"></iframe>'
+            break;
     }
+    
 }
 
 
