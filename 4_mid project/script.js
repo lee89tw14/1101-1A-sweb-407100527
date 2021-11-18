@@ -12,25 +12,25 @@ function change(index){
             p.innerHTML = '<iframe width=100% height=100% src="./midproject.html"></iframe>'
             break;
         case 4:
-            p.innerHTML = '<iframe width=100% height=100% src="./classdemo/w01/intro.html"></iframe>'          
+            p.innerHTML = '<iframe width=100% height=100% src="./classdemo/classdemo.html"></iframe>'          
             break;
         case 5:
-            p.innerHTML = '<iframe width=100% height=100% src="./classdemo/w01/pokemon.html"></iframe>'
+            p.innerHTML = '<iframe width=100% height=100% src="./classdemo/classdemo.html"></iframe>'
             break;
         case 6:
-            p.innerHTML = '<iframe width=100% height=100% src="./classdemo/w04/blog.html"></iframe>'
+            p.innerHTML = '<iframe width=100% height=100% src="./classdemo/classdemo.html"></iframe>'
             break;
         case 7:
-            p.innerHTML = '<iframe width=100% height=100% src="./classdemo/w04/imageGallery.html"></iframe>'
+            p.innerHTML = '<iframe width=100% height=100% src="./classdemo/classdemo.html"></iframe>'
             break;
         case 8:
-            p.innerHTML = '<iframe width=100% height=100% src="./classdemo/w05/index.html"></iframe>'
+            p.innerHTML = '<iframe width=100% height=100% src="./classdemo/classdemo.html"></iframe>'
             break;
         case 9:
-            p.innerHTML = '<iframe width=100% height=100% src="./classdemo/w06 carousel modified/index.html"></iframe>'
+            p.innerHTML = '<iframe width=100% height=100% src="./classdemo/classdemo.html"></iframe>'
             break;
         case 10:
-            p.innerHTML = '<iframe width=100% height=100% src="classdemo/w04/imageGallery.html"></iframe>'
+            p.innerHTML = '<iframe width=100% height=100% src="./classdemo/classdemo.html"></iframe>'
             break;
         case 11:
             p.innerHTML = '<iframe width=100% height=100% src="https://rukkafran.xyz"></iframe>'
