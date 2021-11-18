@@ -1,3 +1,6 @@
+#HTML
+
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -274,3 +277,294 @@
     </div>
   </body>
 </html>
+```
+
+---
+
+#SCSS
+
+```scss
+* {
+  box-sizing: border-box;
+  border-collapse: collapse;
+}
+body {
+  background-image: url(http://d20aeo683mqd6t.cloudfront.net/zh-hant/articles/title_images/000/040/984/medium/pixta_40007407_M.jpg?2021),
+    linear-gradient(rgb(255, 255, 255), rgb(228, 183, 228));
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  width: 90%;
+  margin: auto;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+// nav for midproject
+.heading {
+  width: 100%;
+  margin: auto;
+  height: 50px;
+  background-color: rgb(189, 189, 189);
+  border-radius: 5px;
+  border: solid gray;
+  ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    padding-right: 12px;
+    line-height: 0px;
+  }
+  ul li {
+    padding: 10px;
+  }
+  ul li a {
+    text-decoration: none;
+    padding: 5px;
+  }
+  ul li a:hover {
+    color: azure;
+    background: darkolivegreen;
+  }
+}
+.article {
+  width: 100%;
+  margin: auto;
+  background-color: #afc2d4;
+  border-left: 20px #afc2d4 solid;
+  border-right: 20px #afc2d4 solid;
+  border-radius: 20px;
+}
+// hero
+.slideshow {
+  width: 100%;
+  margin: 20px auto;
+  padding-top: 20px;
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+
+      .text {
+        color: black;
+        background-color: #e7e5e5;
+      }
+      /* SHOWCASE */
+      .showcase {
+        width: 100%;
+        height: 30rem;
+        background: url('./img/slide1.png') no-repeat center center/cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 5rem;
+        font-size: 1.2rem;
+        h2 {
+          margin-bottom: 1rem;
+        }
+        p {
+          margin-bottom: 1rem;
+        }
+      }
+      /* XBox */
+      // .xbox {
+      //   width: 100%;
+      //   height: 350px;
+      //   background: url('./img/xbox.png') no-repeat center center/cover;
+
+      //   .content {
+      //     width: 40%;
+      //     padding: 2rem 0 0 2rem;
+
+      //     h2 {
+      //       font-size: 1.5rem;
+      //     }
+
+      //     p {
+      //       margin: 1rem 0 1.2rem;
+      //       font-size: 0.9rem;
+      //     }
+      //   }
+      // }
+      .carousel {
+        width: 800px;
+        margin: 100px auto;
+        background-color: #087f5b;
+        /* padding: 32px; */
+        /* padding-left: 86px; */
+        /* padding-right: 48px; */
+        padding: 32px 48px 32px 86px;
+
+        border-radius: 8px;
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        gap: 86px;
+        img {
+          height: 200px;
+          border-radius: 8px;
+          transform: scale(1.5);
+          box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+        }
+        .testimonial-text {
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 1.5;
+          margin-bottom: 32px;
+          color: #e6fcf5;
+        }
+        .testimonial-author {
+          font-size: 14px;
+          margin-bottom: 4px;
+          color: #c3fae8;
+        }
+        .testimonial-job {
+          font-size: 12px;
+          color: #c3fae8;
+        }
+      }
+    }
+    /* Next & previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 15px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+      .active {
+        background-color: #717171;
+      }
+    }
+  }
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(107, 107, 107);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    &:hover {
+      background-color: #717171;
+    }
+  }
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    /* Fading animation */
+    @-webkit-keyframes fade {
+      from {
+        opacity: 0.4;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: 0.4;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    img {
+      border-radius: 10px;
+    }
+  }
+}
+//resume
+.resume {
+  table {
+    background-color: #dbdbdb;
+  }
+}
+// photogallery
+.photo {
+  width: 100%;
+  margin: auto;
+  padding: 15px;
+
+  .line3 img {
+    width: 31%;
+    margin: 1%;
+    border: 3px solid #000;
+    vertical-align: middle;
+  }
+  .div2 h1 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: rgb(32, 56, 54);
+    padding-bottom: 1.3rem;
+  }
+  .div2 p {
+    border-left: 5px solid #e446af;
+    padding-left: 0.5rem;
+    line-height: 200%; /*表示段落其他小字要放大的行高*/
+    text-align: justify;
+    font-size: 1.2rem;
+  }
+  #FC:first-letter {
+    font-size: 200%; /*表示首字要放大的比率大小*/
+
+    color: rgb(61, 61, 92);
+
+    font-weight: bold; /*首字粗體*/
+    float: none;
+    padding-right: 3px;
+    /*首字與右邊的距離*/
+    line-height: 100%; /*表示首字放大的行高*/
+  }
+}
+```

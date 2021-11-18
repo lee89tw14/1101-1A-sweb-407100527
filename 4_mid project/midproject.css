@@ -6,6 +6,9 @@
 }
 
 body {
+  background-image: url(http://d20aeo683mqd6t.cloudfront.net/zh-hant/articles/title_images/000/040/984/medium/pixta_40007407_M.jpg?2021), -webkit-gradient(linear, left top, left bottom, from(white), to(#e4b7e4));
+  background-image: url(http://d20aeo683mqd6t.cloudfront.net/zh-hant/articles/title_images/000/040/984/medium/pixta_40007407_M.jpg?2021), linear-gradient(white, #e4b7e4);
+  background-blend-mode: darken;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -20,8 +23,9 @@ body {
   width: 100%;
   margin: auto;
   height: 50px;
-  background-color: none;
-  border: none;
+  background-color: #bdbdbd;
+  border-radius: 5px;
+  border: solid gray;
 }
 
 .heading ul {
@@ -35,6 +39,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  vertical-align: middle;
+  padding-right: 12px;
+  line-height: 0px;
 }
 
 .heading ul li {
@@ -51,9 +58,19 @@ body {
   background: darkolivegreen;
 }
 
+.article {
+  width: 100%;
+  margin: auto;
+  background-color: #afc2d4;
+  border-left: 20px #afc2d4 solid;
+  border-right: 20px #afc2d4 solid;
+  border-radius: 20px;
+}
+
 .slideshow {
-  width: 50%;
+  width: 100%;
   margin: 20px auto;
+  padding-top: 20px;
   /* Slideshow container */
   /* The dots/bullets/indicators */
 }
@@ -191,7 +208,7 @@ body {
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
-  bottom: 8px;
+  bottom: 15px;
   width: 100%;
   text-align: center;
 }
@@ -213,7 +230,7 @@ body {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: #6b6b6b;
   border-radius: 50%;
   display: inline-block;
   -webkit-transition: background-color 0.6s ease;
@@ -250,11 +267,18 @@ body {
   }
 }
 
+.slideshow .fade img {
+  border-radius: 10px;
+}
+
+.resume table {
+  background-color: #dbdbdb;
+}
+
 .photo {
   width: 100%;
   margin: auto;
   padding: 15px;
-  background-color: #afc2d4;
 }
 
 .photo .line3 img {
