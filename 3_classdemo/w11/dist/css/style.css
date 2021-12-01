@@ -30,32 +30,13 @@
   border: #ccc 1px solid;
 }
 
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: 'Raleway', sans-serif;
-  font-size: 1rem;
-  line-height: 1.6;
-  background-color: #fff;
-  color: #333;
-}
-
-a {
-  text-decoration: none;
-  color: #17a2b8;
-}
-
-ul {
-  list-style: none;
-}
-
-img {
+.dark-overlay {
+  position: absolute;
   width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .navbar {
@@ -91,4 +72,38 @@ img {
 
 .navbar a:hover {
   color: #17a2b8;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #17a2b8;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+.landing {
+  position: relative;
+  background: url("../img/showcase.jpg") no-repeat center center/cover !important;
+  height: 100vh;
 }
