@@ -47,11 +47,12 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-family: sans-serif;
+  font-family: 'Rubik', sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
 }
+
 .heading-primary {
   font-size: 5.2rem;
   font-weight: 700;
@@ -60,11 +61,13 @@ body {
   line-height: 1.05;
   margin-bottom: 3.2rem;
 }
+
 .heading-secondary {
   font-size: 4.4rem;
   line-height: 1.2;
   margin-bottom: 9.6rem;
 }
+
 .subheading {
   display: block;
   font-size: 1.6rem;
@@ -72,7 +75,9 @@ body {
   color: #cf711f;
   text-transform: uppercase;
   margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
 }
+
 .btn {
   display: inline-block;
   font-size: 2rem;
@@ -91,20 +96,27 @@ body {
       background-color: #cf711f;
     }
   }
+
   &--outline {
     background-color: #fff;
     color: #555;
 
     &:hover {
       background-color: #fdf2e9;
-      box-shadow: inset 0 0 0 3px #fff;
+      box-shadow: 0 0 0 3px #fff;
     }
   }
 }
+
 .margin-right-sm {
   margin-right: 1.6rem;
 }
-// HERO IN SECTION
+
+/**************************/
+/* HERO IN SECTION */
+/**************************/
+
+
 .section-hero {
   background-color: #fdf2e9;
   padding: 9.6rem 0;
@@ -140,7 +152,7 @@ body {
           height: 4.8rem;
           width: 4.8rem;
           border-radius: 50%;
-          margin-left: -1.6rem;
+          margin-right: -1.6rem;
 
           &:last-child {
             margin-right: 0;
@@ -150,17 +162,20 @@ body {
 
       .delivered-text {
         font-size: 1.8rem;
+
         span {
-          color: #e67e22;
-          font-weight: 700;
+        color: #e67e22;
+        font-weight: 700;
         }
       }
     }
   }
 }
+
 /**************************/
 /* FEATURED IN SECTION */
 /**************************/
+
 .section-featured {
   padding: 4.8rem 0 3.2rem 0;
 
@@ -185,31 +200,37 @@ body {
     }
   }
 }
-/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
 
-// section-testimonials
+/**************************/
+/* TESTIMONIALS IN SECTION */
+/**************************/
+
 .section-testimonials {
   display: grid;
   grid-template-columns: 55fr 45fr;
   align-items: center;
+  
   .testimonials-container {
-    padding: 1.6rem;
-
+    padding: 9.6rem;
+    
     .testimonials {
       display: grid;
       grid-template-columns: 1fr 1fr;
       row-gap: 4.8rem;
       column-gap: 9.6rem;
+
       .testimonial-img {
         width: 6.4rem;
         border-radius: 50%;
         margin-bottom: 1.2rem;
       }
+
       .testimonial-text {
         font-size: 1.8rem;
         line-height: 1.8;
         margin-bottom: 1.6rem;
       }
+
       .testimonial-name {
         font-size: 1.6rem;
         color: #6f6f6f;
@@ -218,23 +239,28 @@ body {
   }
 
   .gallery {
-    display: grid;
-    gap: 1.6rem;
+    display: grid; 
     grid-template-columns: repeat(3, 1fr);
-  }
-  .gallery-item {
-    overflow: hidden;
-    img {
-      display: block;
-      width: 100%;
-      transition: all 0.1s;
+    gap: 1.6rem;
 
-      &:hover {
-        transform: scale(1.1);
+    .gallery-item {
+      // overflow: hidden;
+
+      img {
+        display: block;
+        width: 100%;
+        transition: all 0.4s;
+
+        &:hover {
+          transform: scale(1.1);
+        }
       }
     }
   }
 }
+
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+
 /**************************/
 /* BELOW 1344px (Smaller desktops) */
 /**************************/
@@ -257,12 +283,12 @@ body {
   .section-hero {
     .hero {
       grid-template-columns: 1fr;
-      gap: 6.4;
-
-      .hero-text-box,
-      .hero-img-box {
+      gap: 6.4rem;
+     
+      .hero-text-box, .hero-img-box {
         text-align: center;
       }
+
       &-img {
         width: 60%;
       }
@@ -272,6 +298,7 @@ body {
       }
     }
   }
+
   .section-featured {
     .logos {
       img {
@@ -279,8 +306,10 @@ body {
       }
     }
   }
+
   .section-testimonials {
     grid-template-columns: 1fr;
+
     .gallery {
       grid-template-columns: repeat(6, 1fr);
     }

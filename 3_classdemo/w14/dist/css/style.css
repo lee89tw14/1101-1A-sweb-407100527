@@ -48,7 +48,7 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
@@ -76,6 +76,7 @@ body {
   color: #cf711f;
   text-transform: uppercase;
   margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
 }
 
 .btn {
@@ -101,13 +102,16 @@ body {
 }
 .btn--outline:hover {
   background-color: #fdf2e9;
-  box-shadow: inset 0 0 0 3px #fff;
+  box-shadow: 0 0 0 3px #fff;
 }
 
 .margin-right-sm {
   margin-right: 1.6rem;
 }
 
+/**************************/
+/* HERO IN SECTION */
+/**************************/
 .section-hero {
   background-color: #fdf2e9;
   padding: 9.6rem 0;
@@ -141,7 +145,7 @@ body {
   height: 4.8rem;
   width: 4.8rem;
   border-radius: 50%;
-  margin-left: -1.6rem;
+  margin-right: -1.6rem;
 }
 .section-hero .hero .delivered-meals .delivered-imgs img:last-child {
   margin-right: 0;
@@ -179,14 +183,16 @@ body {
   opacity: 50%;
 }
 
-/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+/**************************/
+/* TESTIMONIALS IN SECTION */
+/**************************/
 .section-testimonials {
   display: grid;
   grid-template-columns: 55fr 45fr;
   align-items: center;
 }
 .section-testimonials .testimonials-container {
-  padding: 1.6rem;
+  padding: 9.6rem;
 }
 .section-testimonials .testimonials-container .testimonials {
   display: grid;
@@ -210,21 +216,19 @@ body {
 }
 .section-testimonials .gallery {
   display: grid;
-  gap: 1.6rem;
   grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
 }
-.section-testimonials .gallery-item {
-  overflow: hidden;
-}
-.section-testimonials .gallery-item img {
+.section-testimonials .gallery .gallery-item img {
   display: block;
   width: 100%;
-  transition: all 0.1s;
+  transition: all 0.4s;
 }
-.section-testimonials .gallery-item img:hover {
+.section-testimonials .gallery .gallery-item img:hover {
   transform: scale(1.1);
 }
 
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
 /**************************/
 /* BELOW 1344px (Smaller desktops) */
 /**************************/
@@ -237,10 +241,9 @@ body {
 @media (max-width: 59em) {
   .section-hero .hero {
     grid-template-columns: 1fr;
-    gap: 6.4;
+    gap: 6.4rem;
   }
-  .section-hero .hero .hero-text-box,
-.section-hero .hero .hero-img-box {
+  .section-hero .hero .hero-text-box, .section-hero .hero .hero-img-box {
     text-align: center;
   }
   .section-hero .hero-img {
