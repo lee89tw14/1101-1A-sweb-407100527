@@ -1,79 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"></link>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.smartmenus/1.1.0/addons/bootstrap/jquery.smartmenus.bootstrap.min.css" rel="stylesheet"></link>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.smartmenus/1.1.0/jquery.smartmenus.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.smartmenus/1.1.0/addons/bootstrap/jquery.smartmenus.bootstrap.min.js'></script>
-  <title>Final Project</title>
-</head>
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css" />
+    <!-- https://fontawesome.com/ -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <title>Final Project</title>
+  </head>
 
-<body>
-    <header class="header">
-        <nav>
-            <div>
-                <!--Nav-->
-                <div class="navbar navbar-default" role="navigation">
-        
-                <!--Title-->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="./index.html">final project</a>
-                </div>
-                
-            
-                <!--dropmenu-->
-                <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="#">Project <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">主要項目<span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">課程實作 <span class="caret"></span></a>
-                                        <ul class="dropdown-menu">
-                                            <li onclick="change(4)"><a href="#">w10</a></li>
-                                            <li onclick="change(4)"><a href="#">w11</a></li>
-                                            <li onclick="change(4)"><a href="#">w12</a></li>
-                                            <li onclick="change(4)"><a href="#">w13</a></li>
-                                            <li onclick="change(4)"><a href="#">w14</a></li>
-                                        </ul>   
-                                    </li>
-                                    <li><a href="#">期末project</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="#">自主學習 <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li onclick="change(10)"><a href="#">My photo Gallery</a></li>
-                        </ul>
-                </ul>       
-            </div>
-            
-            <script src="./script/script.js"></script>
-        </nav>
-    </header>
+  <body>
     <main>
-        <section class="section-hero">
-            <div class="hero">
-                <div class="hero-text-box">
-                    <h1 class="heading-primary"></h1>
+      <section class="section-head">
+        <div class="position-relative">
+          <div class="position-absolute header">
+            <div class="container-fluid position-relative">
+              <div class="row">
+                <div class="col-7 col-md-4">
+                  <a
+                    href="index.html"
+                    class="bg-black text-center logo-container"
+                  >
+                    <i class="fas fa-video site-logo mb-3"></i>
+                    <h1 class="site-name">final Project</h1>
+                  </a>
                 </div>
+                <div class="col-5 col-md-8 ml-auto mr-0">
+                  <div class="site-nav">
+                    <nav
+                      class="navbar navbar-expand-lg mr-0 ml-auto"
+                      id="main-nav"
+                    >
+                      <button
+                        class="
+                          navbar-toggler
+                          bg-black
+                          py-2
+                          px-3
+                          mr-0
+                          ml-auto
+                          collapsed
+                        "
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbar-nav"
+                        aria-controls="navbar-nav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                      >
+                        <span>
+                          <i class="fas fa-bars menu-closed-icon"></i>
+                          <i class="fas fa-times menu-opened-icon"></i>
+                        </span>
+                      </button>
+                      <div class="collapse navbar-collapse nav" id="navbar-nav">
+                        <ul class="navbar-nav text-uppercase">
+                          <li class="nav-item active">
+                            <a class="nav-link nav-link" href="#"
+                              >Videos <span class="sr-only">(current)</span></a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link nav-link" href="#">About</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link nav-link" href="#">Contact</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </nav>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
+
+          <div class="welcome-container text-center text-white">
+            <div class="welcome-container-inner">
+              <p class="welcome-text mb-1 text-white">期末project</p>
+              <p class="welcome-text mb-5 text-white">這裡可以放圖片或影片</p>
+              <a href="#content" class="btn btn-animate btn-cta icon-down">
+                <span>Discover</span>
+              </a>
+            </div>
+          </div>
+
+          <div id="video-container">
+            <video autoplay muted loop id="video">
+              <!-- <source src="video/sunset-timelapse-video.mp4" type="video/mp4"> -->
+              <source src="video/wheat-field.mp4" type="video/mp4" />
+            </video>
+          </div>
+
+          <i id="video-control-button" class="fas fa-pause"></i>
+        </div>
+      </section>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary"></h1>
+          </div>
+        </div>
+      </section>
+      <section class="section-gallery">
+        <div class="gallery">
+          <figure class="gallery-item">
+            <img
+              src="https://cdn.discordapp.com/attachments/861248486555779102/904976154300121128/line_303760595402716.jpg"
+              alt=""
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="https://cdn.discordapp.com/attachments/861248486555779102/904976154807656468/line_303743043236056.jpg"
+              alt=""
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="https://cdn.discordapp.com/attachments/861248486555779102/904976155143184394/line_303706803654142.jpg"
+              alt=""
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="https://cdn.discordapp.com/attachments/861248486555779102/904976155420000266/line_303686041817067.jpg"
+              alt=""
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="https://cdn.discordapp.com/attachments/861248486555779102/904976155688448020/line_303673431103895.jpg"
+              alt=""
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="https://cdn.discordapp.com/attachments/861248486555779102/904976189884596274/line_303264301482801.jpg"
+              alt=""
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="https://cdn.discordapp.com/attachments/861248486555779102/909307926487892008/line_362791476586341.jpg"
+              alt=""
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="https://cdn.discordapp.com/attachments/861248486555779102/904976189645545472/line_303312304635543.jpg"
+              alt=""
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="https://cdn.discordapp.com/attachments/861248486555779102/904976189360316426/line_303419067717742.jpg"
+              alt=""
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="https://cdn.discordapp.com/attachments/861248486555779102/909307443308273674/line_362639859130774.jpg"
+              alt=""
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="https://cdn.discordapp.com/attachments/861248486555779102/909307443937443840/line_362675769795292.jpg"
+              alt=""
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="https://cdn.discordapp.com/attachments/861248486555779102/909307443622854696/line_362656095748424.jpg"
+              alt=""
+            />
+          </figure>
+        </div>
+      </section>
+      <script src="script/jquery-3.4.1.min.js"></script>
+      <script src="script/bootstrap.min.js"></script>
+      <script>
+        function setVideoSize() {
+          const vidWidth = 1920;
+          const vidHeight = 1080;
+          let windowWidth = window.innerWidth;
+          let newVidWidth = windowWidth;
+          let newVidHeight = (windowWidth * vidHeight) / vidWidth;
+          let marginLeft = 0;
+          let marginTop = 0;
+
+          if (newVidHeight < 500) {
+            newVidHeight = 500;
+            newVidWidth = (newVidHeight * vidWidth) / vidHeight;
+          }
+
+          if (newVidWidth > windowWidth) {
+            marginLeft = -((newVidWidth - windowWidth) / 2);
+          }
+
+          if (newVidHeight > 720) {
+            marginTop = -((newVidHeight - $('#video-container').height()) / 2);
+          }
+
+          const tmVideo = $('#video');
+
+          tmVideo.css('width', newVidWidth);
+          tmVideo.css('height', newVidHeight);
+          tmVideo.css('margin-left', marginLeft);
+          tmVideo.css('margin-top', marginTop);
+        }
+
+        $(document).ready(function () {
+          /************** Video background *********/
+
+          setVideoSize();
+
+          // Set video background size based on window size
+          let timeout;
+          window.onresize = function () {
+            clearTimeout(timeout);
+            timeout = setTimeout(setVideoSize, 100);
+          };
+
+          // Play/Pause button for video background
+          const btn = $('#video-control-button');
+
+          btn.on('click', function (e) {
+            const video = document.getElementById('video');
+            $(this).removeClass();
+
+            if (video.paused) {
+              video.play();
+              $(this).addClass('fas fa-pause');
+            } else {
+              video.pause();
+              $(this).addClass('fas fa-play');
+            }
+          });
+        });
+      </script>
     </main>
-</body>
+  </body>
+</html>
