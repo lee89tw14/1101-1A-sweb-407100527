@@ -7,7 +7,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 18px;
   line-height: 2em;
   overflow-x: hidden;
@@ -17,6 +17,7 @@ a {
   transition: all 0.3s ease;
   color: #666;
 }
+
 a:hover {
   color: #29bbcc;
   text-decoration: none;
@@ -87,7 +88,8 @@ p {
 #main-nav .nav-item .nav-link {
   border-bottom: 1px solid transparent;
 }
-#main-nav .nav-item.active .nav-link, #main-nav .nav-item:hover .nav-link {
+#main-nav .nav-item:active .nav-link,
+#main-nav .nav-item:hover .nav-link {
   border-bottom: 1px solid white;
   color: white;
 }
@@ -145,25 +147,19 @@ p {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
-  font-family: "Font Awesome 5 Free";
+  font-family: 'Font Awesome 5 Free';
   font-style: normal;
   font-weight: 900;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
 }
 .btn-animate::after {
-  content: "";
+  content: '';
   position: absolute;
   z-index: -1;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
-}
-.btn-animate:hover span {
-  -webkit-transform: translateY(300%);
-  -moz-transform: translateY(300%);
-  -ms-transform: translateY(300%);
-  transform: translateY(300%);
 }
 .btn-animate:hover::before {
   top: 13px;
@@ -179,31 +175,58 @@ p {
   transition: all 0.3s;
   backface-visibility: hidden;
 }
-
-.btn-cta {
+.btn-animate .btn-animate:hover span {
+  -webkit-transform: translateY(300%);
+  -moz-transform: translateY(300%);
+  -ms-transform: translateY(300%);
+  transform: translateY(300%);
+}
+.btn-animate .btn-cta {
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
 }
-.btn-cta::before {
+.btn-animate .btn-cta::before {
   font-size: 180%;
 }
+
+.btn-download:before {
+  font-size: 120%;
+}
+
+.btn-submit:before {
+  font-size: 120%;
+}
+
+.icon-down:before {
+  content: '\f078';
+}
+
+.icon-download:before {
+  content: '\f019';
+}
+
+.icon-submit:before {
+  content: '\f1d8';
+}
+
+.icon-submit:hover:before {
+  top: 18px;
+}
+
 .btn-cta:hover {
   color: white;
 }
 
-.icon-down::before {
-  content: "\f078";
-}
-
-.icon-download::before {
-  content: "\f019";
-}
-
-.btn-download:hover, .btn-download:focus,
+.btn-download:hover,
+.btn-download:focus,
 .btn-submit:hover,
 .btn-submit:focus {
   color: white;
   background-color: #3399cc;
+}
+
+.btn-download span {
+  padding-top: 10px;
 }
 
 .btn-small {
@@ -242,9 +265,11 @@ p {
 .thumbnail-container {
   overflow: hidden;
 }
+
 .thumbnail-container img {
   transition: all 0.3s ease;
 }
+
 .thumbnail-container:hover img {
   transform: scale(1.2) rotate(5deg);
 }
@@ -260,12 +285,6 @@ p {
   background-color: rgba(0, 0, 0, 0.4);
   cursor: pointer;
   transition: all 0.3s ease;
-}
-.img-overlay:hover {
-  background-color: transparent;
-}
-.img-overlay:hover .tm-overlay-icon {
-  opacity: 0;
 }
 
 .overlay-icon {
@@ -283,6 +302,14 @@ p {
   padding-right: 8px;
   z-index: 1002;
   transition: all 0.3s ease;
+}
+
+.img-overlay:hover {
+  background-color: transparent;
+}
+
+.img-overlay:hover .overlay-icon {
+  opacity: 0;
 }
 
 .catalog-item-description {
@@ -311,7 +338,9 @@ p {
   padding: 10px;
   border-bottom: 3px solid transparent;
 }
-.category-link.active, .category-link:hover {
+
+.category-link.active,
+.category-link:hover {
   border-bottom: 3px solid #3399cc;
   color: #3399cc;
 }
