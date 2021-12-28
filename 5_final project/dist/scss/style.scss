@@ -15,11 +15,10 @@ body {
 a {
   transition: all 0.3s ease;
   color: #666;
-}
-
-a:hover {
-  color: #29bbcc;
-  text-decoration: none;
+  &:hover {
+    color: #29bbcc;
+    text-decoration: none;
+  }
 }
 
 h2,
@@ -27,7 +26,7 @@ p {
   color: #666666;
 }
 
-.header {
+.site-header {
   position: absolute;
   z-index: 1000;
   width: 100%;
@@ -86,7 +85,7 @@ p {
     .nav-link {
       border-bottom: 1px solid transparent;
     }
-    &:active,
+    &.active,
     &:hover {
       .nav-link {
         border-bottom: 1px solid white;
@@ -163,6 +162,12 @@ p {
     transition: all 0.3s;
   }
   &:hover {
+    span {
+      -webkit-transform: translateY(300%);
+      -moz-transform: translateY(300%);
+      -ms-transform: translateY(300%);
+      transform: translateY(300%);
+    }
     &::before {
       top: 13px;
     }
@@ -178,53 +183,72 @@ p {
     transition: all 0.3s;
     backface-visibility: hidden;
   }
-  .btn-animate:hover span {
-    -webkit-transform: translateY(300%);
-    -moz-transform: translateY(300%);
-    -ms-transform: translateY(300%);
-    transform: translateY(300%);
+}
+
+.btn-cta {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  &::before {
+    font-size: 180%;
   }
-  .btn-cta {
+  &:hover {
     color: white;
-    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.icon-download {
+  &::before {
+    content: '\f078';
+  }
+}
+
+.btn-download {
+  &::before {
+    font-size: 120%;
+  }
+  span {
+    padding-top: 10px;
+  }
+}
+
+.icon-submit {
+  &::before {
+    content: '\f1d8';
+  }
+  &:hover {
     &::before {
-      font-size: 180%;
+      top: 18px;
     }
   }
 }
-.btn-download:before {
-  font-size: 120%;
-}
-.btn-submit:before {
-  font-size: 120%;
-}
-.icon-down:before {
-  content: '\f078';
-}
-.icon-download:before {
-  content: '\f019';
-}
-.icon-submit:before {
-  content: '\f1d8';
-}
-.icon-submit:hover:before {
-  top: 18px;
-}
-.btn-cta:hover {
-  color: white;
+
+.btn-submit {
+  &::before {
+    font-size: 120%;
+  }
 }
 
-.btn-download:hover,
-.btn-download:focus,
-.btn-submit:hover,
-.btn-submit:focus {
-  color: white;
-  background-color: #3399cc;
+.icon-down {
+  &::before {
+    content: '\f078';
+  }
 }
 
-.btn-download span {
-  padding-top: 10px;
+.icon-download {
+  &::before {
+    content: '\f019';
+  }
 }
+
+.btn-download,
+.btn-submit {
+  &:hover,
+  &:focus {
+    color: white;
+    background-color: #3399cc;
+  }
+}
+
 .btn-small {
   padding: 10.5px 35px;
   font-size: 1.2rem;
@@ -259,12 +283,14 @@ p {
 
 .thumbnail-container {
   overflow: hidden;
-}
-.thumbnail-container img {
-  transition: all 0.3s ease;
-}
-.thumbnail-container:hover img {
-  transform: scale(1.2) rotate(5deg);
+  img {
+    transition: all 0.3s ease;
+  }
+  &:hover {
+    img {
+      transform: scale(1.2) rotate(5deg);
+    }
+  }
 }
 
 .img-overlay {
@@ -278,6 +304,13 @@ p {
   background-color: rgba(0, 0, 0, 0.4);
   cursor: pointer;
   transition: all 0.3s ease;
+
+  &:hover {
+    background-color: transparent;
+    .tm-overlay-icon {
+      opacity: 0;
+    }
+  }
 }
 
 .overlay-icon {
@@ -297,12 +330,6 @@ p {
   transition: all 0.3s ease;
 }
 
-.img-overlay:hover {
-  background-color: transparent;
-}
-.img-overlay:hover .overlay-icon {
-  opacity: 0;
-}
 .catalog-item-description {
   flex: 1;
 }
@@ -326,12 +353,11 @@ p {
   color: #3399cc;
   padding: 10px;
   border-bottom: 3px solid transparent;
-}
-
-.category-link.active,
-.category-link:hover {
-  border-bottom: 3px solid #3399cc;
-  color: #3399cc;
+  &.active,
+  &:hover {
+    border-bottom: 3px solid #3399cc;
+    color: #3399cc;
+  }
 }
 
 .paging-link {
