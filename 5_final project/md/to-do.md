@@ -1,1 +1,0 @@
-- 一頁式設計 下面 Gallery 上面有一個大的背景 有 learnmore
