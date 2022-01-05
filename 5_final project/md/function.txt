@@ -1,0 +1,2 @@
+https://tiush.github.io/react-simple-modal-slideshow/
+https://www.npmjs.com/package/react-modal-slideshow
