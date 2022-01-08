@@ -1,6 +1,4 @@
 //全域設定
-@import 'modal';
-
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -12,7 +10,9 @@ body {
   font-size: 18px;
   line-height: 2em;
   overflow-x: hidden;
-  overflow: hidden;
+  &.hidden-scroll {
+    overflow: hidden !important;
+  }
 }
 a {
   transition: all 0.3s ease;
@@ -36,6 +36,7 @@ iframe {
 /*********/
 //gallery css
 /*********/
+@import 'modal';
 .section-gallery {
   .gallery {
     display: grid;

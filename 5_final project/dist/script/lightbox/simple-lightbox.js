@@ -390,7 +390,7 @@ var SimpleLightbox = /*#__PURE__*/function () {
 
           if (scrollbarWidth > 0 || scrollbarWidth == 0 && this.isAppleDevice) {
             document.body.classList.add('hidden-scroll');
-            document.body.style.paddingRight = paddingRight + scrollbarWidth + 'px';
+            document.body.style.paddingRight = paddingRight + scrollbarWidth;
             fixedElements.forEach(function (element) {
               var actualPadding = element.style.paddingRight;
               var calculatedPadding = window.getComputedStyle(element)['padding-right'];
