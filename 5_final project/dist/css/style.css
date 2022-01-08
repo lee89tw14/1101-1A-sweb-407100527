@@ -810,10 +810,38 @@ body.hidden-scroll {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
+
+  .section-gallery {
+    grid-template-columns: 1fr;
+  }
+  .section-gallery .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .section-gallery .gallery .gallery-item img {
+    width: 100%;
+    transition: all 0.4s;
+  }
+  .section-gallery .gallery .gallery-item img:hover {
+    transform: scale(0.8);
+  }
 }
 @media (max-width: 419px) {
   .testimonial {
     flex-direction: column;
+  }
+
+  .section-gallery {
+    grid-template-columns: 1fr;
+  }
+  .section-gallery .gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .section-gallery .gallery .gallery-item img {
+    width: 100%;
+    transition: all 0.4s;
+  }
+  .section-gallery .gallery .gallery-item img:hover {
+    transform: scale(0.8);
   }
 }
 
