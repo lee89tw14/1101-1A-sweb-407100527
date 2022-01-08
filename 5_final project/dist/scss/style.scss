@@ -40,7 +40,7 @@ iframe {
 .section-gallery {
   .gallery {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 1.6rem;
 
     .gallery-item {
@@ -258,6 +258,25 @@ iframe {
 @media (max-width: 1419px) {
   .catalog-item {
     margin-bottom: 30px;
+  }
+  .section-gallery {
+    grid-template-columns: 1fr;
+
+    .gallery {
+      grid-template-columns: repeat(4, 1fr);
+      .gallery-item {
+        // overflow: hidden;
+
+        img {
+          width: 100%;
+          transition: all 0.4s;
+
+          &:hover {
+            transform: scale(0.8);
+          }
+        }
+      }
+    }
   }
 }
 

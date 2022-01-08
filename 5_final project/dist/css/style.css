@@ -511,7 +511,7 @@ body.hidden-scroll {
 }
 .section-gallery .gallery {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 1.6rem;
 }
 .section-gallery .gallery .gallery-item {
@@ -691,6 +691,20 @@ body.hidden-scroll {
 @media (max-width: 1419px) {
   .catalog-item {
     margin-bottom: 30px;
+  }
+
+  .section-gallery {
+    grid-template-columns: 1fr;
+  }
+  .section-gallery .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .section-gallery .gallery .gallery-item img {
+    width: 100%;
+    transition: all 0.4s;
+  }
+  .section-gallery .gallery .gallery-item img:hover {
+    transform: scale(0.8);
   }
 }
 @media (max-width: 991px) {
