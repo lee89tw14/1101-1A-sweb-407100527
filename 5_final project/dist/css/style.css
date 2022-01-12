@@ -34,6 +34,23 @@ iframe {
   overflow: hidden;
 }
 
+.back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 2em;
+  right: 0px;
+  text-decoration: none;
+  color: #000000;
+  background-color: rgba(235, 235, 235, 0.8);
+  font-size: 12px;
+  padding: 1em;
+}
+.back-to-top:hover {
+  background-color: rgba(135, 135, 135, 0.5);
+  text-decoration: none;
+  color: #ffffff;
+}
+
 /*********/
 /*********/
 .header {
@@ -221,6 +238,7 @@ iframe {
 video {
   width: 100%;
   height: auto;
+  filter: brightness(65%);
 }
 
 /*********/
@@ -588,66 +606,6 @@ body.hidden-scroll {
 .section-footer .copyright-text {
   margin: 0;
 }
-.section-footer .social-icons {
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
-}
-.section-footer .social-icons li {
-  display: inline-block;
-  margin-bottom: 4px;
-}
-.section-footer .social-icons li.little {
-  margin-right: 15px;
-  text-transform: uppercase;
-  color: #96a2b2;
-  font-weight: 700;
-  font-size: 13px;
-}
-.section-footer .social-icons a {
-  background-color: #eceeef;
-  color: #818a91;
-  font-size: 16px;
-  display: inline-block;
-  line-height: 44px;
-  width: 44px;
-  height: 44px;
-  text-align: center;
-  margin-right: 8px;
-  border-radius: 100%;
-  -webkit-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-}
-.section-footer .social-icons a:active, .section-footer .social-icons a:focus, .section-footer .social-icons a:hover {
-  color: #fff;
-  background-color: #29aafe;
-}
-.section-footer .social-icons a.facebook:hover {
-  background-color: #3b5998;
-}
-.section-footer .social-icons a.twitter:hover {
-  background-color: #00aced;
-}
-.section-footer .social-icons a.linkedin:hover {
-  background-color: #007bb6;
-}
-.section-footer .social-icons a.dribbble:hover {
-  background-color: #ea4c89;
-}
-.section-footer .social-icons .social-icons li.title {
-  margin-right: 15px;
-  text-transform: uppercase;
-  color: #96a2b2;
-  font-weight: 700;
-  font-size: 13px;
-}
-.section-footer .social-icons.size-sm a {
-  line-height: 34px;
-  height: 34px;
-  width: 34px;
-  font-size: 14px;
-}
 
 @media (max-width: 991px) {
   .site-footer [class^=col-] {
@@ -806,23 +764,9 @@ body.hidden-scroll {
   }
 }
 @media (max-width: 640px) {
-  .subscribe-form {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .subscribe-form > input {
-    max-width: 100%;
-  }
-
-  .subscribe-form input {
-    margin-right: 0;
-    margin-bottom: 15px;
-  }
-
-  .share-box {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+  .logo-container {
+    height: 200px;
+    width: 160px;
   }
 
   .section-gallery {

@@ -16,7 +16,7 @@
 
   <body>
     <main>
-      <section class="section-head">
+      <section class="section-head" id="Header">
         <div class="position-relative">
           <div class="position-absolute header">
             <div class="container-fluid position-relative">
@@ -26,8 +26,10 @@
                     href="index.html"
                     class="bg-black text-center logo-container"
                   >
-                    <i class="fas fa-video site-logo mb-3"></i>
-                    <h1 class="site-name">final Project</h1>
+                    <!-- <i class="fas fa-video site-logo mb-3"></i> -->
+                    <!-- <i class="fas fa-home site-logo mb-3"></i> -->
+                    <i class="fas fa-portrait site-logo mb-3"></i>
+                    <h1 class="site-name">The Gallery</h1>
                   </a>
                 </div>
                 <div class="col-5 col-md-8 ml-auto mr-0">
@@ -58,10 +60,9 @@
                             >
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link cr-nav-link" href="#">Hero</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link cr-nav-link" href="#">Resume</a>
+                            <a class="nav-link cr-nav-link" href="#Footer"
+                              >Footer</a
+                            >
                           </li>
                         </ul>
                       </div>
@@ -75,9 +76,12 @@
           <div class="welcome-container text-center text-white">
             <div class="welcome-container-inner">
               <p class="welcome-text mb-1 text-white">期末project</p>
-              <p class="welcome-text mb-5 text-white">這裡可以放圖片或影片</p>
-              <a href="#content" class="btn btn-animate btn-cta icon-down">
-                <span>Learn More</span>
+              <p class="welcome-text mb-1 text-white">
+                背景是去秋田時隨手拍攝的
+              </p>
+              <p class="welcome-text mb-5 text-white">簡單的一頁式gallery</p>
+              <a href="#Gallery" class="btn btn-animate btn-cta icon-down">
+                <span>swipe down</span>
               </a>
             </div>
           </div>
@@ -85,7 +89,7 @@
           <div id="video-container">
             <video autoplay muted loop id="video">
               <!-- <source src="video/sunset-timelapse-video.mp4" type="video/mp4"> -->
-              <source src="video/wheat-field.mp4" type="video/mp4" />
+              <source src="video/leave.mp4" type="video/mp4" />
             </video>
           </div>
 
@@ -240,7 +244,7 @@
         </div>
       </section>
       <!-- Site footer -->
-      <section class="section-footer">
+      <section class="section-footer" id="Footer">
         <footer class="site-footer">
           <div class="container">
             <div class="row">
@@ -253,13 +257,13 @@
                 <h6>Sitemap</h6>
                 <ul class="footer-links">
                   <li>
-                    <a href="#">Resume</a>
-                  </li>
-                  <li>
-                    <a href="#">HERO</a>
+                    <a href="#Header">Header</a>
                   </li>
                   <li>
                     <a href="#Gallery">Gallery</a>
+                  </li>
+                  <li>
+                    <a href="#Footer">Footer</a>
                   </li>
                 </ul>
               </div>
@@ -361,6 +365,31 @@
               video.pause();
               $(this).addClass('fas fa-play');
             }
+          });
+        });
+      </script>
+      <!-- <a href="#" class="back-to-top">回到頁首</a> -->
+      <script
+        src="https://kit.fontawesome.com/8fb6c0675d.js"
+        crossorigin="anonymous"
+      ></script>
+      <a href="#" class="back-to-top"><i class="fas fa-chevron-up"></i></a>
+      <script>
+        jQuery(document).ready(function () {
+          var offset = 220;
+          var duration = 500;
+          jQuery(window).scroll(function () {
+            if (jQuery(this).scrollTop() > offset) {
+              jQuery('.back-to-top').fadeIn(duration);
+            } else {
+              jQuery('.back-to-top').fadeOut(duration);
+            }
+          });
+
+          jQuery('.back-to-top').click(function (event) {
+            event.preventDefault();
+            jQuery('html, body').animate({ scrollTop: 0 }, duration);
+            return false;
           });
         });
       </script>
